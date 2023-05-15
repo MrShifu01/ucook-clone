@@ -52,7 +52,6 @@
 
 body {
     margin: 0;
-    overflow: hidden;
     font-family: var(--fnt-body);
     background-color: rgb(245, 245, 245);
 }
@@ -152,4 +151,61 @@ body {
 
 .hero-image {
     width: 80%;
+}
+
+/* About Section */
+
+.about-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.about-title {
+ font-family: var(--fnt-body-m);
+ font-size: 1.1rem;
+}
+
+.about-image {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.about-subtitle {
+    font-family: var(--fnt-body-b);
+    font-size: 1rem;
+}
+
+.about-paragraph {
+    font-family: var(--fnt-body-r);
+    font-size: .65rem;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.1rem;
+}
+
+.about-footer {
+    font-family: var(--fnt-body-r);
+    font-size: .65rem;
+}
+
+/* Coupon Section */
+.coupon-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.coupon-image-container {
+    position: relative;
+}
+
+.coupon-image-overlay {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    position: absolute;
+    border: solid red 3px;
+    z-index: 10;
 }
