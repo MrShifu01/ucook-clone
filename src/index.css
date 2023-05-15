@@ -21,6 +21,14 @@
      url("./fonts/Gordita/Gordita\ Medium.woff") format("truetype");
     font-weight: bold;
 }
+@font-face {
+    font-family: "Utopia";
+    src: local("Utopia"),
+     url("./fonts/Utopia/Utopia-Semibold.otf") format("truetype");
+    font-weight: bold;
+}
+
+
 
 
 *,
@@ -30,13 +38,13 @@
 }
 
 :root {
-    --fnt-title: "Roboto", sans-serif;
+    --fnt-title: "Utopia", sans-serif;
     --fnt-body-b: "Gordita-bold", sans-serif;
     --fnt-body-r: "Gordita-regular", sans-serif;
     --fnt-body-m: "Gordita-medium", sans-serif;
     --clr-grey: #ececec;
     --clr-cream: #FAFAFA;
-    --clr-light: #f1f1ee
+    --clr-light: #f1f1ee;
     --clr-green: rgb(79, 169, 112);
     --clr-orange: rgb(232, 117, 67);
     --clr-black :rgb(30, 30, 30);
@@ -89,7 +97,7 @@ body {
 .cart-items {
     font-family: var(--fnt-body-r);
     background-color: var(--clr-black);
-    color: white;
+    color:var(--clr-light);
     font-size: .5rem;
 }
 
@@ -101,4 +109,47 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--clr-grey);
+}
+
+.hero-content-container {
+    width: 50%;
+}
+
+.hero-content {
+    width: 60%;
+}
+
+.hero-content-title {
+    font-family: var(--fnt-title);
+    font-weight: 600;
+    font-style: normal;
+    color: var(--clr-black);
+    font-size: 2rem;
+}
+
+.hero-content-subtitle {
+    font-family: var(--fnt-body-m);
+    font-size: 1.2rem;
+    color: var(--clr-black);
+}
+
+.hero-content-paragraph {
+    font-size: .65rem;
+    font-family: var(--fnt-body-r);
+    line-height: 1.1rem;
+}
+
+.hero-content-button {
+    background-color: var(--clr-green);
+    color: var(--clr-light);
+    font-family: var(--fnt-body-m);
+    font-size: .65rem;
+}
+
+.hero-image-container {
+    width: 50%;
+}
+
+.hero-image {
+    width: 80%;
 }
