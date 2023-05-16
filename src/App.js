@@ -5,6 +5,8 @@ import About from './components/About';
 import Coupon from './components/Coupon';
 import Why from './components/Why';
 import MenuCarousel from './components/MenuCarousel';
+import BigCarousel from './components/BigCarousel';
+import Testimonials from './components/Testimonials';
 
 
 
@@ -17,6 +19,8 @@ function App() {
       <Coupon />
       <Why />
       <MenuCarousel />
+      <BigCarousel />
+      <Testimonials />
     </>
   );
 }

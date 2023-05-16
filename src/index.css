@@ -318,7 +318,7 @@ body {
 }
 
 .menuitem-image {
-    width: 200px;
+    width: 240px;
 }
 
 .menuitem-title {
@@ -331,8 +331,87 @@ body {
     color: var(--clr-orange);
 }
 
+.total-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .carousel {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.blank-container {
+    width: 220px;
+    background-color: var(--clr-cream);
+}
+
+.bottom-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--clr-cream);
+    height: 70px;
+}
+
+/* Big Carousel Section */
+
+.big-carousel-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.carousel-slides {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wines-image-container {
+    width: 55%;
+    background-color: rgb(167, 183, 119);
+}
+
+.wines-image {
+    border-radius: 0 0 0 50px;
+}
+
+.wines-text {
+    width: 45%;
+    background-color: rgb(167, 183, 119);
+}
+
+.wines-content {
+    padding-left: 130px;
+    padding-right: 50px;
+}
+
+.wines-title {
+    font-family: var(--fnt-body-m);
+    font-size: 2rem;
+    color: white;
+    line-height: 4rem;
+}
+
+.wines-paragraph {
+    font-family: var(--fnt-body-m);
+    font-size: .9rem;
+    color: white;
+}
+
+.wines-button {
+    border: 1px solid var(--clr-black);
+    font-family: var(--fnt-body-m);
+    font-size: .8rem;
+}
+
+/* Testimonials */
+
+.testimonial-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 100px auto;
 }
