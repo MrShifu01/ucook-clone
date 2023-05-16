@@ -136,6 +136,7 @@ body {
     font-size: .65rem;
     font-family: var(--fnt-body-r);
     line-height: 1.1rem;
+    color: var(--clr-black);
 }
 
 .hero-content-button {
@@ -165,6 +166,7 @@ body {
 .about-title {
  font-family: var(--fnt-body-m);
  font-size: 1.1rem;
+ color: var(--clr-black);
 }
 
 .about-image {
@@ -175,6 +177,7 @@ body {
 .about-subtitle {
     font-family: var(--fnt-body-b);
     font-size: 1rem;
+    color: var(--clr-black);
 }
 
 .about-paragraph {
@@ -183,11 +186,13 @@ body {
     max-width: 70%;
     margin: 0 auto;
     line-height: 1.1rem;
+    color: var(--clr-black);
 }
 
 .about-footer {
     font-family: var(--fnt-body-r);
     font-size: .65rem;
+    color: var(--clr-black);
 }
 
 /* Coupon Section */
@@ -198,14 +203,136 @@ body {
 }
 
 .coupon-image-container {
-    position: relative;
+    background-image: url("coupon-image.webp");
+    object-fit: cover;
+    width: 1440px;
+    height: 500px;
 }
 
 .coupon-image-overlay {
-    width: 60%;
-    height: 60%;
+    width: 75%;
+    height: 70%;
     background-color: white;
-    position: absolute;
-    border: solid red 3px;
-    z-index: 10;
+    border-radius: 15px;
+}
+
+.coupon-title {
+    font-family: var(--fnt-body-b);
+    font-size: 1.2rem;
+    color: var(--clr-black);
+}
+
+.coupon-subtitle {
+    font-family: var(--fnt-body-m);
+    font-size: 1.7rem;
+    color: var(--clr-black);
+}
+
+.coupon-paragraph {
+    text-transform: uppercase;
+    font-family: var(--fnt-body-b);
+    font-size:1rem;
+    color: var(--clr-black);
+}
+
+.coupon-button {
+    background-color: var(--clr-green);
+    color: white;
+    font-family: var(--fnt-body-m);
+    font-size: 1rem;
+}
+
+/* Why Section */
+
+.why-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--clr-light);
+}
+
+.why-title {
+    font-family: var(--fnt-body-m);
+    color: var(--clr-black);
+    font-size: 1.25rem;
+}
+
+.why-image {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.why-subtitle {
+    font-family: var(--fnt-body-b);
+    color: var(--clr-black);
+    font-size: 1rem;
+}
+
+.why-paragraph {
+    font-family: var(--fnt-body-r);
+    color: var(--clr-black);
+    font-size: .65rem;
+    max-width: 55%;
+    margin: 0 auto;
+    line-height: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+.why-button {
+    background-color: var(--clr-black);
+    color: white;
+    font-family: var(--fnt-body-m);
+    font-size: 1rem;
+}
+
+/* Menu Section */
+
+.menu-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--clr-cream);
+}
+
+.menu-title {
+    font-family: var(--fnt-body-m);
+    font-size: 1.5rem;
+    color: var(--clr-black);
+}
+
+.menu-nav-list {
+    list-style: none;
+    font-family: var(--fnt-body-r);
+    font-size: .85rem;
+    cursor: pointer;
+}
+
+.menu-nav-items {
+    cursor: pointer;
+}
+
+/* MenuItems Section  */
+
+.menuitem-container {
+    background-color: var(--clr-cream);
+}
+
+.menuitem-image {
+    width: 200px;
+}
+
+.menuitem-title {
+    font-family: var(--fnt-body-m);
+    font-size: .55rem;
+    color: var(--clr-black);
+}
+
+.selected {
+    color: var(--clr-orange);
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
