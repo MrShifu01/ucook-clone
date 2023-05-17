@@ -72,11 +72,18 @@ body {
     color: var(--clr-black);
 }
 
+.nav-item {
+    text-decoration: none;
+    color: var(--clr-orange);
+    font-size: .4rem;
+    font-family: var(--fnt-body-r);
+}
+
 .nav-login {
     color: var(--clr-orange);
     font-size: .7rem;
     font-family: var(--fnt-body-b);
-    
+    text-decoration: none;
 }
 
 .nav-signup {
@@ -370,6 +377,7 @@ body {
     margin: 0 auto;
 }
 
+/* Wines */
 .wines-image-container {
     width: 55%;
     background-color: rgb(167, 183, 119);
@@ -403,6 +411,123 @@ body {
 }
 
 .wines-button {
+    border: 1px solid var(--clr-black);
+    font-family: var(--fnt-body-m);
+    font-size: .8rem;
+}
+
+/* Pizza */
+.pizza-image-container {
+    width: 55%;
+    background-color: rgb(190, 190, 175);
+}
+
+.pizza-image {
+    border-radius: 0 0 0 50px;
+}
+
+.pizza-text {
+    width: 45%;
+    background-color: rgb(190, 190, 175);
+}
+
+.pizza-content {
+    padding-left: 130px;
+    padding-right: 50px;
+}
+
+.pizza-title {
+    font-family: var(--fnt-body-m);
+    font-size: 2rem;
+    color: white;
+    line-height: 4rem;
+}
+
+.pizza-paragraph {
+    font-family: var(--fnt-body-m);
+    font-size: .9rem;
+    color: white;
+}
+
+.pizza-button {
+    border: 1px solid var(--clr-black);
+    font-family: var(--fnt-body-m);
+    font-size: .8rem;
+}
+
+/* bbq */
+.bbq-image-container {
+    width: 55%;
+    background-color: rgb(190, 190, 175);
+}
+
+.bbq-image {
+    border-radius: 0 0 0 50px;
+}
+
+.bbq-text {
+    width: 45%;
+    background-color: rgb(190, 190, 175);
+}
+
+.bbq-content {
+    padding-left: 130px;
+    padding-right: 50px;
+}
+
+.bbq-title {
+    font-family: var(--fnt-body-m);
+    font-size: 2rem;
+    color: white;
+    line-height: 4rem;
+}
+
+.bbq-paragraph {
+    font-family: var(--fnt-body-m);
+    font-size: .9rem;
+    color: white;
+}
+
+.bbq-button {
+    border: 1px solid var(--clr-black);
+    font-family: var(--fnt-body-m);
+    font-size: .8rem;
+}
+
+/* fruits */
+.fruits-image-container {
+    width: 55%;
+    background-color: rgb(167, 183, 119);
+}
+
+.fruits-image {
+    border-radius: 0 0 0 50px;
+}
+
+.fruits-text {
+    width: 45%;
+    background-color: rgb(167, 183, 119);
+}
+
+.fruits-content {
+    padding-left: 130px;
+    padding-right: 50px;
+}
+
+.fruits-title {
+    font-family: var(--fnt-body-m);
+    font-size: 2rem;
+    color: white;
+    line-height: 4rem;
+}
+
+.fruits-paragraph {
+    font-family: var(--fnt-body-m);
+    font-size: .9rem;
+    color: white;
+}
+
+.fruits-button {
     border: 1px solid var(--clr-black);
     font-family: var(--fnt-body-m);
     font-size: .8rem;

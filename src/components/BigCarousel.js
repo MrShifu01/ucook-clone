@@ -29,46 +29,61 @@ export default function BigCarousel() {
             </div>
         </div>
       </Carousel.Item>
-      {/* <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/assets/bbq.webp"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+      <Carousel.Item>
+        <div className='carousel-slides pizza flex'>
+            <div className='pizza-text flex flex-col items-center justify-center'>
+                <div className='pizza-content'>
+                    <h1 className='pizza-title'>Wood-fired pizza, ready in minutes</h1>
+                    <p className='pizza-paragraph'>Add any 3 pizzas to your Meal Kit order this week and get 25% off</p>
+                    <button className='pizza-button px-3 py-2'>SHOP NOW</button>
+                </div>
+            </div>
+            <div className='pizza-image-container'>
+                <img
+                className="pizza-image d-block w-100"
+                src="/assets/pizza.webp"
+                alt="First slide"
+                />
+            </div>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/assets/pizza.webp"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <div className='carousel-slides bbq flex'>
+            <div className='bbq-text flex flex-col items-center justify-center'>
+                <div className='bbq-content'>
+                    <h1 className='bbq-title'>A new menu is here to take care of dinner</h1>
+                    <p className='bbq-paragraph'>No "What's for Dinner?" or standing in shopping queues - tasty Meal Kits delivered to your door</p>
+                    <button className='bbq-button px-3 py-2'>ORDER NOW</button>
+                </div>
+            </div>
+            <div className='bbq-image-container'>
+                <img
+                className="bbq-image d-block w-100"
+                src="/assets/bbq.webp"
+                alt="First slide"
+                />
+            </div>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/assets/fruits.webp"
-          alt="Third slide"
-        />
+        <div className='carousel-slides fruits flex'>
+            <div className='fruits-text flex flex-col items-center justify-center'>
+                <div className='fruits-content'>
+                    <h1 className='fruits-title'>Fresh, locally sourced produce</h1>
+                    <p className='fruits-paragraph'>Get the freshest produce for the tastiest meals</p>
+                    <button className='fruits-button px-3 py-2'>SHOP MARKET</button>
+                </div>
+            </div>
+            <div className='fruits-image-container'>
+                <img
+                className="fruits-image d-block w-100"
+                src="/assets/fruits.webp"
+                alt="First slide"
+                />
+            </div>
+        </div>
+      </Carousel.Item>
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item> */}
     </Carousel>
   );
 }
