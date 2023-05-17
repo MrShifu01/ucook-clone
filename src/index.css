@@ -538,5 +538,37 @@ body {
 .testimonial-container {
     width: 100%;
     max-width: 1440px;
-    margin: 100px auto;
+    margin: 0 auto;
+    background-color: var(--clr-cream);
+}
+
+.testimonial-card {
+    width: 400px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.testimonial-title {
+    font-family: var(--fnt-body-m);
+    font-size: .1rem;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 5px;
+}
+
+.testimonial-star {
+    width: 20px;
+    height: 20px;
+}
+
+.testimonial-text {
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
 }
