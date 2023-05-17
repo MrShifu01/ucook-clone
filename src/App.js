@@ -8,6 +8,7 @@ import MenuCarousel from './components/MenuCarousel';
 import BigCarousel from './components/BigCarousel';
 import Testimonials from './components/Testimonials';
 import MealKitsCarousel from './components/MealKitsCarousel';
+import Footer from './components/Footer'
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <BigCarousel />
       <Testimonials />
       <MealKitsCarousel/>
+      <Footer />
     </>
   );
 }
