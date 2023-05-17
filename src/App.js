@@ -7,6 +7,7 @@ import Why from './components/Why';
 import MenuCarousel from './components/MenuCarousel';
 import BigCarousel from './components/BigCarousel';
 import Testimonials from './components/Testimonials';
+import MealKitsCarousel from './components/MealKitsCarousel';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <MenuCarousel />
       <BigCarousel />
       <Testimonials />
+      <MealKitsCarousel/>
     </>
   );
 }

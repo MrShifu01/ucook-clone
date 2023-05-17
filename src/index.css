@@ -572,3 +572,31 @@ body {
     padding: 0 1rem;
     text-align: center;
 }
+
+/* Meal Kits Section */
+
+.mealkit-carousel-container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--clr-light);
+}
+
+.mealkit-title {
+    font-family: var(--fnt-body-m);
+    font-size: 1.3rem;
+}
+
+.mealkit-card {
+    width: 25rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mealkit-card-body {
+    font-family: var(--fnt-body-r);
+}
+
+.mealkit-card-title {
+    font-family: var(--fnt-body-b);
+}
