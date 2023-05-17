@@ -2,7 +2,7 @@ import '../index.css'
 
 export default function Testimonials () {
     return (
-        <div className="testimonial-container flex justify-around py-20">
+        <div className="testimonial-container">
             <div className="testimonial-card bg-white">
                 <div className="testimonial-title flex justify-between">
                     <h6>Rachel Kolisi</h6>

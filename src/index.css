@@ -47,12 +47,6 @@
     --clr-black :rgb(30, 30, 30);
 }
 
-body {
-    margin: 0;
-    font-family: var(--fnt-body-m);
-    background-color: rgb(245, 245, 245);
-}
-
 /* ********** */
 /* Navbar Component Styling */
 /* ********** */
@@ -243,34 +237,35 @@ body {
 
 .coupon-image-container {
     background-image: url("coupon-image.webp");
-    object-fit: cover;
-    width: 1440px;
-    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%px;
+    height: 450px;
 }
 
 .coupon-image-overlay {
     width: 75%;
-    height: 70%;
-    background-color: white;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
 }
 
 .coupon-title {
     font-family: var(--fnt-body-b);
     font-size: 1.2rem;
-    color: var(--clr-black);
 }
 
 .coupon-subtitle {
     font-family: var(--fnt-body-m);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--clr-black);
 }
 
 .coupon-paragraph {
     text-transform: uppercase;
     font-family: var(--fnt-body-b);
-    font-size:1rem;
+    font-size: .9rem;
     color: var(--clr-black);
 }
 
@@ -279,6 +274,8 @@ body {
     color: white;
     font-family: var(--fnt-body-m);
     font-size: 1rem;
+    padding-top: .9rem;
+    padding-bottom: .7rem;
 }
 
 /* Why Section */
@@ -315,6 +312,17 @@ body {
     margin: 0 auto;
     line-height: 1.1rem;
     margin-bottom: 4rem;
+}
+
+@media (max-width: 767px) {
+    
+    .why-content-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .why-paragraph {
+        max-width: 90%;
+    }
 }
 
 .why-button {
@@ -407,162 +415,63 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Wines */
-.wines-image-container {
+/* Common styles for images */
+.image-container {
     width: 55%;
-    background-color: rgb(167, 183, 119);
 }
 
-.wines-image {
+.image {
     border-radius: 0 0 0 50px;
 }
 
-.wines-text {
+/* Common styles for text */
+.text {
     width: 45%;
-    background-color: rgb(167, 183, 119);
 }
 
-.wines-content {
+.content {
     padding-left: 130px;
     padding-right: 50px;
 }
 
-.wines-title {
+.title {
     font-family: var(--fnt-body-m);
     font-size: 2rem;
     color: white;
     line-height: 4rem;
 }
 
-.wines-paragraph {
+.paragraph {
     font-family: var(--fnt-body-m);
     font-size: .9rem;
     color: white;
 }
 
-.wines-button {
+.button {
     border: 1px solid var(--clr-black);
     font-family: var(--fnt-body-m);
     font-size: .8rem;
 }
 
-/* Pizza */
-.pizza-image-container {
-    width: 55%;
-    background-color: rgb(190, 190, 175);
-}
-
-.pizza-image {
-    border-radius: 0 0 0 50px;
-}
-
-.pizza-text {
-    width: 45%;
-    background-color: rgb(190, 190, 175);
-}
-
-.pizza-content {
-    padding-left: 130px;
-    padding-right: 50px;
-}
-
-.pizza-title {
-    font-family: var(--fnt-body-m);
-    font-size: 2rem;
-    color: white;
-    line-height: 4rem;
-}
-
-.pizza-paragraph {
-    font-family: var(--fnt-body-m);
-    font-size: .9rem;
-    color: white;
-}
-
-.pizza-button {
-    border: 1px solid var(--clr-black);
-    font-family: var(--fnt-body-m);
-    font-size: .8rem;
-}
-
-/* bbq */
-.bbq-image-container {
-    width: 55%;
-    background-color: rgb(190, 190, 175);
-}
-
-.bbq-image {
-    border-radius: 0 0 0 50px;
-}
-
-.bbq-text {
-    width: 45%;
-    background-color: rgb(190, 190, 175);
-}
-
-.bbq-content {
-    padding-left: 130px;
-    padding-right: 50px;
-}
-
-.bbq-title {
-    font-family: var(--fnt-body-m);
-    font-size: 2rem;
-    color: white;
-    line-height: 4rem;
-}
-
-.bbq-paragraph {
-    font-family: var(--fnt-body-m);
-    font-size: .9rem;
-    color: white;
-}
-
-.bbq-button {
-    border: 1px solid var(--clr-black);
-    font-family: var(--fnt-body-m);
-    font-size: .8rem;
-}
-
-/* fruits */
-.fruits-image-container {
-    width: 55%;
+/* Specific styles */
+.wines-image-container, .fruits-image-container {
     background-color: rgb(167, 183, 119);
 }
 
-.fruits-image {
-    border-radius: 0 0 0 50px;
+.pizza-image-container, .bbq-image-container {
+    background-color: rgb(190, 190, 175);
 }
 
-.fruits-text {
-    width: 45%;
+.wines-text, .fruits-text {
     background-color: rgb(167, 183, 119);
 }
 
-.fruits-content {
-    padding-left: 130px;
-    padding-right: 50px;
-}
-
-.fruits-title {
-    font-family: var(--fnt-body-m);
-    font-size: 2rem;
-    color: white;
-    line-height: 4rem;
-}
-
-.fruits-paragraph {
-    font-family: var(--fnt-body-m);
-    font-size: .9rem;
-    color: white;
-}
-
-.fruits-button {
-    border: 1px solid var(--clr-black);
-    font-family: var(--fnt-body-m);
-    font-size: .8rem;
+.pizza-text, .bbq-text {
+    background-color: rgb(190, 190, 175);
 }
 
 /* Testimonials */
@@ -572,12 +481,18 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--clr-cream);
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
 }
 
 .testimonial-card {
-    width: 400px;
+    width: 360px;
     height: 160px;
     border-radius: 10px;
+
 }
 
 .testimonial-title {
@@ -603,6 +518,10 @@ body {
     margin: 0;
     padding: 0 1rem;
     text-align: center;
+    font-family: var(--fnt-body-r);
+    font-size: .8rem;
+    letter-spacing: .04rem;
+    line-height: 1.4rem;
 }
 
 /* Meal Kits Section */
@@ -612,6 +531,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--clr-light);
+    padding-bottom: 100px;
 }
 
 .mealkit-title {
@@ -650,6 +570,7 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    background-color: white;
 }
 
 .footer-contact {
