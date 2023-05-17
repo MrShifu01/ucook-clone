@@ -1,20 +1,22 @@
 import '../index.css'
 
+
 export default function Navbar () {
     return (
-        <div className="nav-container w-full h bg-white position-fixed">
+        <div className="nav-container w-full h bg-white">
             <div className='nav-content flex items-center justify-between'>
-                <div className="nav-container-left flex items-end pb-3">
-                    <div className='nav-logo-container m-2 p-3'>
+                <div className="nav-container-left">
+                    <div className='nav-logo-container'>
                         <a href="/"><img className="logo" src="/assets/logo.svg" alt="ucook logo" /></a>
                     </div>
-                    <ul className="nav-list ml-4 mr-3 flex gap-5 uppercase">
-                        <a className='nav-item' href="/meal-kit"><li>Meal Kits</li></a>
-                        <a className='nav-item' href="/frozen"><li>Frozen</li></a>
-                        <a className='nav-item' href="/wine"><li>Wine</li></a>
-                        <a className='nav-item' href="/market"><li>Market</li></a>
-                        <a className='nav-item' href="/about"><li>About Ucook</li></a>
+                    <ul className="header-nav-list uppercase">
+                        <li className="header-nav-item"><a className="header-nav-link" href="/">Meal Kits</a></li>
+                        <li className="header-nav-item"><a className="header-nav-link" href="/">Frozen</a></li>
+                        <li className="header-nav-item"><a className="header-nav-link" href="/">Wine</a></li>
+                        <li className="header-nav-item"><a className="header-nav-link" href="/">Market</a></li>
+                        <li className="header-nav-item"><a className="header-nav-link" href="/">About UCOOK</a></li>
                     </ul>
+
                 </div>
                 <div className="nav-container-right flex items-center">
                     <div className="nav-auth flex items-center gap-3">
@@ -29,7 +31,7 @@ export default function Navbar () {
                     <div className="nav-cart flex items-center">
                         <a href="/cart"><img className="w-4 ml-3 mr-1.5" src="/assets/cart-icon.png" alt="cart icon"></img></a>
                         <div className="cart-items py-0.5 px-1 mr-7 rounded">
-                            <a href="/cart">0</a>
+                            <a className="cart-items-link" href="/cart">0</a>
                         </div>
                     </div>
                 </div>
