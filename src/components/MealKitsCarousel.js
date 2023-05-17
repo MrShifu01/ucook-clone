@@ -17,10 +17,10 @@ export default function MealKitsCarousel() {
         
         {mealkits.map((item) => 
             <Carousel.Item>
-                <div className="mealkit-card bg-white">
+                <div key={item.id} className="mealkit-card bg-white">
                     <img className="mealkit-card-img-top" src={item.image} alt={item.alt}/>
                     <div className="mealkit-card-body px-6">
-                        <h5 className="mealkit-card-title text-center pt-3 pb-6">{item.title}</h5>
+                        <h5 className="mealkit-card-title text-center pt-3 pb-6">{item.name}</h5>
                         <p className="mealkit-card-text text-center">{item.text}</p>
                         <p className="mealkit-link text-center"><a className='no-underline text-blue-800' href="/">{item.link}</a></p>
                     </div>
