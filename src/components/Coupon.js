@@ -1,4 +1,7 @@
+// Import the css
 import '../index.css'
+
+// Coupon section that has an image as a background and a opaque white container
 export default function Coupon () {
     return (
         <div className="coupon-container">

@@ -1,7 +1,9 @@
+// Import the css
 import '../index.css'
 
 export default function Footer () {
     return (
+        // Continaers for the footer section
         <div className='footer-container flex flex-col'>
             <div className='footer-contact py-4 flex gap-3 items-center justify-center my-4'>
                 <h3 className='footer-contact-title uppercase m-2'>Keep in touch with our kitchen</h3>
@@ -31,23 +33,32 @@ export default function Footer () {
                     <ul className='footer-nav-list'>
                         <li>FAQ'S</li>
                         <li>Contact</li>
-                        <li>Phone + icon</li>
-                        <li>wghatsapp + icon</li>
+                        <li className="flex items-center gap-1">
+                            <img className="w-2 h-2" src="/assets/telephone.png" alt="telephone"/>
+                            011 123 1234
+                        </li>
+                        <li className="flex items-center gap-1">
+                            <img className="w-2 h-2" src="/assets/whatsapp.png" alt="whatsapp"/>
+                            011 123 1234
+                        </li>
                     </ul>
                 </div>
+                {/* Scial media and App store Buttons */}
                 <div className='footer-nav-social'>
                     <div className='app-stores flex'>
                         <img className='app-store-img' src='/assets/app-store.png' alt="apple app store"/>
                         <img className='app-store-img' src='/assets/google.png' alt="google playstore"/>
                     </div>
-                    <div className='social-media'>
-                        <img/>
-                        <img/>
-                        <img/>
-                        <img/>
+                    <div className='social-media flex gap-2 pl-2 pt-2'>
+                        <img className="w-3 h-3" src="/assets/facebook.png" alt="facebook"/>
+                        <img className="w-3 h-3" src="/assets/instagram.png" alt="instagram"/>
+                        <img className="w-3 h-3" src="/assets/twitter.png" alt="twitter"/>
+                        <img className="w-3 h-3" src="/assets/youtube.png" alt="youtube"/>
+
                     </div>
                 </div>
             </div>
+            {/* Copyright section and Privacy, t&c type links */}
             <div className='footer-footer flex justify-between'>
                 <div className='footer-footer-title my-5'>© UCOOK. All rights reserved by The Supper Society Proprietary Limited | Liquor License: WCP/042073 | GAU/10615</div>
                 <div className='footer-t-c flex my-5 gap-3'>

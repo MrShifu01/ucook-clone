@@ -1,3 +1,4 @@
+// Importing the necessary components
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -5,19 +6,22 @@ import mealkits from '../mealkits'
 import {Stack} from 'react-bootstrap'
 
 export default function MealKitsCarousel() {
+  // Initialize state for the active index of the carousel
   const [index, setIndex] = useState(0);
 
+  // Handler function for carousel slide selection
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
+  // Divide meal kits into two arrays for separate carousel items
   const mealkitChunkOne = [];
-  const mealkitChunktwo = [];
+  const mealkitChunkTwo = [];
   for (let i = 0; i < mealkits.length; i++) {
     if (i < 3) {
       mealkitChunkOne.push(mealkits[i])
     } else {
-      mealkitChunktwo.push(mealkits[i])
+      mealkitChunkTwo.push(mealkits[i])
     }
   }
 
@@ -27,7 +31,7 @@ export default function MealKitsCarousel() {
     <Carousel 
     activeIndex={index} 
     onSelect={handleSelect}
-    interval={null}
+    interval={null}  // Disable automatic carousel slide transitions
     >
       <Carousel.Item className="flex">
         <Stack
@@ -35,8 +39,8 @@ export default function MealKitsCarousel() {
             className="justify-content-center align-items-center"
             gap={3}
         >
+          {/* Map over first chunk of mealkits */}
           {mealkitChunkOne.map((item) =>
-
                   <div key={item.id} className="mealkit-card bg-white">
                       <img className="mealkit-card-img-top" src={item.image} alt={item.alt}/>
                       <div className="mealkit-card-body px-6">
@@ -45,7 +49,6 @@ export default function MealKitsCarousel() {
                           <p className="mealkit-link text-center"><a className='no-underline text-blue-800' href="/">{item.link}</a></p>
                       </div>
                   </div>
-
           )}
         </Stack>
         </Carousel.Item>
@@ -55,8 +58,8 @@ export default function MealKitsCarousel() {
             className="justify-content-center align-items-center"
             gap={3}
         >
-          {mealkitChunktwo.map((item) =>
-
+          {/* Map over second chunk of mealkits */}
+          {mealkitChunkTwo.map((item) =>
                   <div key={item.id} className="mealkit-card bg-white">
                       <img className="mealkit-card-img-top" src={item.image} alt={item.alt}/>
                       <div className="mealkit-card-body px-6">
@@ -65,12 +68,11 @@ export default function MealKitsCarousel() {
                           <p className="mealkit-link text-center"><a className='no-underline text-blue-800' href="/">{item.link}</a></p>
                       </div>
                   </div>
-
           )}
         </Stack>
         </Carousel.Item>
-
     </Carousel>
     </div>
   );
 }
+

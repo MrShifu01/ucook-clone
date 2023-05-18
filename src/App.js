@@ -1,3 +1,4 @@
+// Importing all the styles and componentt
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import './index.css';
@@ -11,7 +12,7 @@ import MealKitsCarousel from './components/MealKitsCarousel';
 import Footer from './components/Footer'
 
 
-
+// Calling all the components to be rendered in APP
 function App() {
   return (
     <>

@@ -1,25 +1,34 @@
+// Import necessary libraries and hooks
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// The BigCarousel component
 export default function BigCarousel() {
+  // index state for controlling which Carousel.Item is currently shown
   const [index, setIndex] = useState(0);
 
+  // Function to handle selection of a Carousel.Item
   const handleSelect = (selectedIndex, e) => {
+    // Update the index state when a new item is selected
     setIndex(selectedIndex);
   };
 
+  // Return the Carousel component
   return (
     <Carousel className="big-carousel-container" activeIndex={index} onSelect={handleSelect}>
+      {/* The first item in the Carousel */}
       <Carousel.Item>
         <div className='carousel-slides flex'>
             <div className='text flex flex-col items-center justify-center wines-text'>
                 <div className='content'>
+                    {/* Title, description, and action button for the first item */}
                     <h1 className='title'>Buy any 3 wines and get 25% OFF</h1>
                     <p className='paragraph'>Try award-winning Franschoek wines from paserana</p>
                     <button className='button px-3 py-2'>SHOP WINE</button>
                 </div>
             </div>
+            {/* Image for the first item */}
             <div className='image-container wines-image-container'>
                 <img
                 className="image d-block w-100"
@@ -29,6 +38,7 @@ export default function BigCarousel() {
             </div>
         </div>
       </Carousel.Item>
+      {/* The second item in the Carousel */}
       <Carousel.Item>
         <div className='carousel-slides flex'>
             <div className='text flex flex-col items-center justify-center pizza-text'>
@@ -47,6 +57,7 @@ export default function BigCarousel() {
             </div>
         </div>
       </Carousel.Item>
+      {/* The third item in the Carousel */}
       <Carousel.Item>
         <div className='carousel-slides flex'>
             <div className='text flex flex-col items-center justify-center bbq-text'>
@@ -65,6 +76,7 @@ export default function BigCarousel() {
             </div>
         </div>
       </Carousel.Item>
+      {/* The fourth item in the Carousel */}
       <Carousel.Item>
         <div className='carousel-slides flex'>
             <div className='text flex flex-col items-center justify-center fruits-text'>

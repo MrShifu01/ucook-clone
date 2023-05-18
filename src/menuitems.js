@@ -1,3 +1,4 @@
+// Schema and model for the menu of the week items
 const menuitems = [
     {
         "id": 1,

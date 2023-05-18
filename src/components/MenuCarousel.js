@@ -1,3 +1,4 @@
+// Import necessary libraries, stylesheets and data
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import '../index.css'
@@ -5,6 +6,7 @@ import { useState, useRef } from 'react';
 import menuitems from "../menuitems";
 
 export default function MenuCarousel () {
+    // Responsive breakpoints and settings for different device sizes
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -24,12 +26,16 @@ export default function MenuCarousel () {
         }
     };
 
+    // List of menu categories
     const listItems = ['Adventurous Foodie', 'Quick & Easy', 'Carb Conscious', 'Fan Faves', 'Veggie', '*NEW Simple & Save'];
 
+    // State variable for the currently selected menu category
     const [selectedItem, setSelectedItem] = useState(0);
     
+    // Reference to the carousel object
     const carouselRef = useRef(null);
 
+    // Function to handle clicks on menu categories
     const handleListItemClick = (index) => {
         setSelectedItem(index);
 
@@ -43,6 +49,7 @@ export default function MenuCarousel () {
 
     return (
         <>
+        {/* Menu category selection section */}
         <div className="menu-container flex flex-col justify-center items-center">
             <h1 className="menu-title pt-12 pb-5">On the menu this week</h1>
             <ul className="menu-nav-list flex gap-12 mb-8">
@@ -57,6 +64,8 @@ export default function MenuCarousel () {
                 ))}
             </ul>
         </div>
+
+        {/* Carousel section */}
         <div className="total-container flex">
             <div className="blank-container"></div>
             <Carousel 

@@ -1,12 +1,16 @@
 import '../index.css'
 
+// The Testimonials component displays a set of user testimonials
 export default function Testimonials () {
     return (
         <div className="testimonial-container">
+            {/* Each testimonial is contained in a "testimonial-card" */}
             <div className="testimonial-card bg-white">
+                {/* The testimonial title contains the name of the reviewer and a set of star ratings */}
                 <div className="testimonial-title flex justify-between">
                     <h6>Rachel Kolisi</h6>
                     <div className="testimonial-stars">
+                        {/* Each star is represented as an image */}
                         <img className="testimonial-star" src="/assets/star.png" alt="yellow star"/>
                         <img className="testimonial-star" src="/assets/star.png" alt="yellow star"/>
                         <img className="testimonial-star" src="/assets/star.png" alt="yellow star"/>
@@ -14,8 +18,10 @@ export default function Testimonials () {
                         <img className="testimonial-star" src="/assets/star.png" alt="yellow star"/>
                     </div>
                 </div>
+                {/* The actual testimonial text is contained in a paragraph element */}
                 <p className="testimonial-text">“Always grateful for UCOOK for weeks like these. It’s a quick and easy process, and their meals are always free range, wholesome and nutritious.”</p>
             </div>
+            {/* Additional testimonials follow the same structure */}
             <div className="testimonial-card bg-white">
                 <div className="testimonial-title flex justify-between">
                     <h6>Sarah Graham</h6>

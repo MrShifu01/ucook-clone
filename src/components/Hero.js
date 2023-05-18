@@ -1,5 +1,7 @@
+// Importing the css
 import '../index.css'
 
+// Hero component - Simple
 export default function Hero () {
     return (
         <div className="hero-container">

@@ -1,3 +1,4 @@
+// Schema and model for the meal kit cards
 const mealkits = [
     {
         "id": 1,
